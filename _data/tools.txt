@@ -1,0 +1,8 @@
+new TechRadar.Blip("selenium",adopt,false),
+new TechRadar.Blip("devexpress",hold,false),
+new TechRadar.Blip("NUnit 3",adopt,false),
+new TechRadar.Blip("PowerBI",adopt,false),
+new TechRadar.Blip("Visual studio 2019",adopt,false),
+new TechRadar.Blip("Visual Studio Code",adopt,false),
+new TechRadar.Blip("Github",adopt,false),
+new TechRadar.Blip("Modern Unix commands", assess,true),

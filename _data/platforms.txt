@@ -1,0 +1,8 @@
+new TechRadar.Blip("Zendesk",adopt,false),
+new TechRadar.Blip("YouTrack",adopt,false),
+new TechRadar.Blip("Jira",adopt,false),
+new TechRadar.Blip("Confluence",adopt,false),
+new TechRadar.Blip("Linux",adopt,false),
+new TechRadar.Blip("Azure",adopt,false),
+new TechRadar.Blip("Amazon Web Services",adopt,false),
+new TechRadar.Blip("Ubuntu",adopt,false),

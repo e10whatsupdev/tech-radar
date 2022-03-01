@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>E10 tech radar</title>
+  <link href="base.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="radar">
+    </div>
+    <div id="ref-table"></div>
+  </body>
+  <script>
+    radar.setFirstQuadrant(toolsQuadrant);
+    radar.setSecondQuadrant(techniquesQuadrant);
+    radar.setThirdQuadrant(platformsQuadrant);
+    radar.setFourthQuadrant(languageFramework);
+
+  var radarGraph = new TechRadar.RadarGraph(1080, radar);
+  radarGraph.init('#radar').plot();
+  var refTable = new TechRadar.RefTable(radar);
+  refTable.init('#ref-table').render();
+</script>
+</html>

@@ -1,0 +1,27 @@
+name,ring,quadrant,isNew,description
+Zendesk,adopt,platforms,FALSE,
+YouTrack,adopt,platforms,FALSE,
+Jira,adopt,platforms,FALSE,
+Confluence,adopt,platforms,FALSE,
+docker,assess,technology,TRUE,<p>Containerisation technology</p>
+R,assess,languages-and-frameworks,FALSE,
+sql server,adopt,technology,FALSE,
+selenium,adopt,tools,FALSE,<p>Automated testing framework</p>
+Couchdb,adopt,technology,FALSE,<p>CouchDB is an open-source/free software (no strings attached) project of The Apache Software Foundation and is released under the Apache License  Version 2.0 ( commercial-friendly).</p>
+winForms,hold,technology,FALSE,
+WPF,hold,languages-and-frameworks,FALSE,<p>Rich interactive applications for windows platform devices.</p>
+devexpress,hold,tools,FALSE,
+Typescript 2.2,adopt,languages-and-frameworks,FALSE,
+NUnit 3,adopt,tools,FALSE,
+.NET Framework,adopt,languages-and-frameworks,FALSE,
+node.js,adopt,languages-and-frameworks,FALSE,
+PowerBI,adopt,tools,FALSE,
+Python,assess,languages-and-frameworks,FALSE,
+Linux,adopt,platforms,FALSE,
+Visual studio 2019,adopt,tools,FALSE,
+Azure,adopt,platforms,FALSE,
+Amazon Web Services,adopt,platforms,FALSE,
+Visual Studio Code,adopt,tools,FALSE,
+Ubuntu,adopt,platforms,FALSE,
+Github,adopt,tools,FALSE,
+Modern Unix commands, assess,tools,TRUE,"<p>There are many reasons to love Unix  but the one that has profoundly affected our industry is the Unix philosophy of building applications that ""do one thing and do it well."" Unix commands embody this philosophy. A set of small functions that can be piped together to             because they reduce the scripts' portability running on other machines</p>"

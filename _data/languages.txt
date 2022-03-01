@@ -1,0 +1,6 @@
+new TechRadar.Blip("R",assess,false),
+new TechRadar.Blip("WPF",hold,false),
+new TechRadar.Blip("Typescript 2.2",adopt,false),
+new TechRadar.Blip(".NET Framework",adopt,false),
+new TechRadar.Blip("node.js",adopt,false),
+new TechRadar.Blip("Python",assess,false),

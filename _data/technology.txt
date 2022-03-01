@@ -1,0 +1,4 @@
+new TechRadar.Blip("docker",assess,true),
+new TechRadar.Blip("sql server",adopt,false),
+new TechRadar.Blip("Couchdb",adopt,false),
+new TechRadar.Blip("winForms",hold,false),
