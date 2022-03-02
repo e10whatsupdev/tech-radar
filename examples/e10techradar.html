@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>E10 tech radar</title>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+  <script src="tech-radar.min.js"></script>
   <link href="base.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -10,15 +12,62 @@
     </div>
     <div id="ref-table"></div>
   </body>
-  <script>
-    radar.setFirstQuadrant(toolsQuadrant);
-    radar.setSecondQuadrant(techniquesQuadrant);
-    radar.setThirdQuadrant(platformsQuadrant);
-    radar.setFourthQuadrant(languageFramework);
+<script>
+  var adopt = new TechRadar.Cycle('Adopt', 0);
+  var trial = new TechRadar.Cycle('Trial', 1);
+  var assess = new TechRadar.Cycle('Assess', 2);
+  var hold = new TechRadar.Cycle('Hold', 3);
+
+  var radar = new TechRadar.Radar();
+  var toolsQuadrant = new TechRadar.Quadrant('Tools');
+  var techniquesQuadrant = new TechRadar.Quadrant('Technology');
+  var platformsQuadrant = new TechRadar.Quadrant('Platforms');
+  var languageFramework = new TechRadar.Quadrant('Languages & Frameworks');
+
+  toolsQuadrant.add([
+      new TechRadar.Blip("selenium",adopt,false),
+      new TechRadar.Blip("devexpress",hold,false),
+      new TechRadar.Blip("NUnit 3",adopt,false),
+      new TechRadar.Blip("PowerBI",adopt,false),
+      new TechRadar.Blip("Visual studio 2019",adopt,false),
+      new TechRadar.Blip("Visual Studio Code",adopt,false),
+      new TechRadar.Blip("Github",adopt,false),
+      new TechRadar.Blip("Modern Unix commands", assess,true)
+  ]);
+  techniquesQuadrant.add([
+    new TechRadar.Blip("docker",assess,true),
+    new TechRadar.Blip("microsoft sql server",adopt,false),
+    new TechRadar.Blip("Couchdb",adopt,false),
+    new TechRadar.Blip("winForms",hold,false)
+  ]);
+  platformsQuadrant.add([
+    new TechRadar.Blip("Zendesk",adopt,false),
+    new TechRadar.Blip("YouTrack",adopt,false),
+    new TechRadar.Blip("Jira",adopt,false),
+    new TechRadar.Blip("Confluence",adopt,false),
+    new TechRadar.Blip("Linux",adopt,false),
+    new TechRadar.Blip("Azure",adopt,false),
+    new TechRadar.Blip("Amazon Web Services",adopt,false),
+    new TechRadar.Blip("Ubuntu",adopt,false)
+  ]);
+  languageFramework.add([
+    new TechRadar.Blip("R",assess,false),
+    new TechRadar.Blip("WPF",hold,false),
+    new TechRadar.Blip("Typescript 2.2",adopt,false),
+    new TechRadar.Blip(".NET Framework",adopt,false),
+    new TechRadar.Blip("node.js",adopt,false),
+    new TechRadar.Blip("Python",assess,false)
+  ]);
+  
+  radar.setFirstQuadrant(toolsQuadrant);
+  radar.setSecondQuadrant(techniquesQuadrant);
+  radar.setThirdQuadrant(platformsQuadrant);
+  radar.setFourthQuadrant(languageFramework);
 
   var radarGraph = new TechRadar.RadarGraph(1080, radar);
   radarGraph.init('#radar').plot();
   var refTable = new TechRadar.RefTable(radar);
+
   refTable.init('#ref-table').render();
 </script>
 </html>
